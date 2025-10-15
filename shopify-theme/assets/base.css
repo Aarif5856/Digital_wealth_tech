@@ -1,0 +1,102 @@
+/* Base styles for Digital Wealth & Tech theme */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: calc(var(--font-body-scale) * 62.5%);
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/* Skip to content link */
+.skip-to-content-link {
+  position: absolute;
+  z-index: 9999;
+  left: 50%;
+  top: 0;
+  transform: translateY(-100%);
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0);
+}
+
+/* Visually hidden utility */
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  word-wrap: normal !important;
+}
+
+/* Button base styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Focus styles */
+.focus-none:focus {
+  outline: none;
+}
+
+/* Content layout */
+.content-for-layout {
+  min-height: 50vh;
+}
+
+/* Responsive utilities */
+@media screen and (max-width: 749px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+}
+

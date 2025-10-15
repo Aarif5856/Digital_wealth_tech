@@ -1,0 +1,360 @@
+/* Digital Wealth & Tech - Custom Styles */
+
+/* Custom CSS Variables */
+:root {
+    --brand-blue: #2563eb;
+    --brand-purple: #7c3aed;
+    --brand-green: #059669;
+    --brand-orange: #ea580c;
+    --brand-dark: #1e293b;
+    --brand-light: #f8fafc;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Animation Classes */
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg;
+}
+
+.btn-secondary {
+    @apply border-2 border-brand-blue text-brand-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-blue hover:text-white transition-all duration-300;
+}
+
+.btn-outline {
+    @apply border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-blue transition-all duration-300;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+}
+
+/* Gradient Text */
+.gradient-text {
+    @apply bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--brand-blue), var(--brand-purple));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #1d4ed8, #6d28d9);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mobile-menu:not(.hidden) {
+    max-height: 500px;
+}
+
+/* Product Card Styles */
+.product-card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden;
+}
+
+.product-card:hover .product-image {
+    @apply scale-105;
+}
+
+.product-image {
+    @apply transition-transform duration-300;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    @apply bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300;
+}
+
+/* Newsletter Form Styles */
+.newsletter-form input[type="email"] {
+    @apply w-full px-6 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent text-lg transition-all duration-300;
+}
+
+.newsletter-form input[type="email"]:focus {
+    @apply outline-none shadow-lg;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #faf5ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23000000" fill-opacity="0.05"><circle cx="30" cy="30" r="2"/></g></svg>');
+    opacity: 0.3;
+}
+
+/* Floating Elements */
+.floating-element {
+    @apply absolute animate-float;
+}
+
+/* Stats Counter Animation */
+.stat-counter {
+    @apply text-3xl md:text-4xl font-bold;
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Focus States */
+.focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2;
+}
+
+/* Loading States */
+.loading {
+    @apply animate-pulse;
+}
+
+/* Error States */
+.error {
+    @apply border-red-500 text-red-500;
+}
+
+/* Success States */
+.success {
+    @apply border-green-500 text-green-500;
+}
+
+/* Responsive Typography */
+.text-responsive {
+    @apply text-sm sm:text-base md:text-lg lg:text-xl;
+}
+
+/* Custom Shadows */
+.shadow-brand {
+    box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1), 0 10px 10px -5px rgba(37, 99, 235, 0.04);
+}
+
+.shadow-brand-lg {
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.1), 0 10px 10px -5px rgba(37, 99, 235, 0.04);
+}
+
+/* Custom Gradients */
+.gradient-brand {
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
+}
+
+.gradient-brand-reverse {
+    background: linear-gradient(135deg, var(--brand-purple), var(--brand-blue));
+}
+
+.gradient-green {
+    background: linear-gradient(135deg, var(--brand-green), var(--brand-blue));
+}
+
+.gradient-orange {
+    background: linear-gradient(135deg, var(--brand-orange), var(--brand-purple));
+}
+
+/* Hover Effects */
+.hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+}
+
+.hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+}
+
+.hover-glow {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-brand-blue/25;
+}
+
+/* Custom Spacing */
+.section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+}
+
+.container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        color: #000 !important;
+        background: #fff !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .gradient-text {
+        @apply text-brand-blue;
+    }
+    
+    .btn-primary {
+        @apply bg-brand-blue text-white;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (if needed) */
+@media (prefers-color-scheme: dark) {
+    .dark-mode {
+        @apply bg-gray-900 text-white;
+    }
+}
+
+/* Custom Utilities */
+.text-balance {
+    text-wrap: balance;
+}
+
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+/* Custom Component Styles */
+.hero-cta {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105;
+}
+
+.hero-cta-primary {
+    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white hover:from-blue-700 hover:to-purple-700 shadow-lg;
+}
+
+.hero-cta-secondary {
+    @apply border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white;
+}
+
+/* Newsletter Success/Error States */
+.newsletter-success {
+    @apply fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300;
+}
+
+.newsletter-success.show {
+    @apply translate-x-0;
+}
+
+.newsletter-error {
+    @apply fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300;
+}
+
+.newsletter-error.show {
+    @apply translate-x-0;
+}

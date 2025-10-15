@@ -1,0 +1,136 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Digital Wealth & Tech",
+    "theme_version": "1.0.0",
+    "theme_author": "Digital Wealth & Tech",
+    "theme_documentation_url": "https://digitalwealthtech.com/docs",
+    "theme_support_url": "https://digitalwealthtech.com/support"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand Colors"
+      },
+      {
+        "type": "color",
+        "id": "brand_blue",
+        "label": "Primary Blue",
+        "default": "#2563eb"
+      },
+      {
+        "type": "color",
+        "id": "brand_purple",
+        "label": "Secondary Purple",
+        "default": "#7c3aed"
+      },
+      {
+        "type": "color",
+        "id": "brand_green",
+        "label": "Success Green",
+        "default": "#059669"
+      },
+      {
+        "type": "color",
+        "id": "brand_orange",
+        "label": "Accent Orange",
+        "default": "#ea580c"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Fonts"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Heading Font",
+        "default": "assistant_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "body_font",
+        "label": "Body Font",
+        "default": "assistant_n4"
+      }
+    ]
+  },
+  {
+    "name": "Homepage",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Hero Section"
+      },
+      {
+        "type": "text",
+        "id": "hero_headline",
+        "label": "Hero Headline",
+        "default": "Empower Your Digital Growth"
+      },
+      {
+        "type": "textarea",
+        "id": "hero_subheadline",
+        "label": "Hero Subheadline",
+        "default": "Discover tools, templates, and automation systems to scale your online business and build sustainable digital wealth."
+      },
+      {
+        "type": "header",
+        "content": "Featured Products"
+      },
+      {
+        "type": "collection",
+        "id": "featured_collection",
+        "label": "Featured Collection",
+        "info": "Select the collection to display in the featured products section"
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Contact Information"
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Contact Email",
+        "default": "support@digitalwealthtech.com"
+      },
+      {
+        "type": "text",
+        "id": "contact_phone",
+        "label": "Contact Phone",
+        "default": "1-800-DIGITAL"
+      },
+      {
+        "type": "header",
+        "content": "Social Media"
+      },
+      {
+        "type": "url",
+        "id": "social_youtube",
+        "label": "YouTube URL"
+      },
+      {
+        "type": "url",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "url",
+        "id": "social_twitter",
+        "label": "Twitter URL"
+      }
+    ]
+  }
+]
+

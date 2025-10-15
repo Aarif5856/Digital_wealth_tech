@@ -1,0 +1,141 @@
+<!-- Featured Products Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our most popular digital tools and templates that are helping entrepreneurs build successful online businesses</p>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {% comment %} 
+            Replace this with actual product loop when connected to Shopify:
+            {% for product in collections.featured.products limit: 4 %}
+            {% endfor %}
+            {% endcomment %}
+            
+            <!-- Product 1 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    <img src="https://placehold.co/400x300/2563eb/ffffff?text=Digital+Automation+Suite" alt="Digital Automation Suite" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 right-4 bg-brand-orange text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Best Seller
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Digital Automation Suite</h3>
+                    <p class="text-gray-600 mb-4">Complete automation toolkit with 50+ templates for email marketing, social media, and sales funnels.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-bold text-brand-blue">$97</span>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">(127)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-brand-blue to-brand-purple text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    <img src="https://placehold.co/400x300/7c3aed/ffffff?text=SaaS+Launch+Template" alt="SaaS Launch Template" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 right-4 bg-brand-green text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        New
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">SaaS Launch Template</h3>
+                    <p class="text-gray-600 mb-4">Ready-to-use templates for landing pages, onboarding flows, and user dashboards.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-bold text-brand-blue">$67</span>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">(89)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-brand-blue to-brand-purple text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    <img src="https://placehold.co/400x300/059669/ffffff?text=E-commerce+Mastery+Pack" alt="E-commerce Mastery Pack" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Mastery Pack</h3>
+                    <p class="text-gray-600 mb-4">Complete guide with templates for product pages, checkout flows, and customer retention.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-bold text-brand-blue">$147</span>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">(203)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-brand-blue to-brand-purple text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
+                <div class="relative">
+                    <img src="https://placehold.co/400x300/ea580c/ffffff?text=Content+Creation+Kit" alt="Content Creation Kit" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-4 right-4 bg-brand-purple text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Popular
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Content Creation Kit</h3>
+                    <p class="text-gray-600 mb-4">Templates and tools for creating engaging content across all social media platforms.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-bold text-brand-blue">$47</span>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">(156)</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-brand-blue to-brand-purple text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View All Products Button -->
+        <div class="text-center mt-12">
+            <a href="{{ routes.collections_url }}" class="inline-flex items-center bg-white text-brand-blue border-2 border-brand-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-blue hover:text-white transition-all duration-300">
+                <span>View All Products</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
